@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Terminator from "./components/terminator/terminator.component";
+import "tachyons";
+import { models } from './models';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <div>
+    <Terminator id={models[0].id} name={models[0].name} serialNumber={models[0].serialNumber} />
+    <Terminator id={models[1].id} name={models[1].name} serialNumber={models[1].serialNumber} />
+    <Terminator id={models[2].id} name={models[2].name} serialNumber={models[2].serialNumber} />
+  </div>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
