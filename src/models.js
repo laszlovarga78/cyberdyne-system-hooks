@@ -29,4 +29,29 @@ export const models = [
     name: "T-850",
     serialNumber: 9816099203,
   },
+  {
+    id: 7,
+    name: "Sarah",
+    serialNumber: 1006099203,
+  },
+  {
+    id: 8,
+    name: "John",
+    serialNumber: 1816099000,
+  },
+  {
+    id: 9,
+    name: "Reese",
+    serialNumber: 1114099202,
+  },
+  {
+    id: 10,
+    name: "T-1000-2",
+    serialNumber: 8826186734,
+  },
+  {
+    id: 11,
+    name: "T-800-2",
+    serialNumber: 4816246799,
+  },
 ];
