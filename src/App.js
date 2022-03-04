@@ -3,6 +3,8 @@ import TerminatorList from "./components/terminator-list/terminator-list.compone
 import { models } from "./models.js";
 import SearchBox from "./components/searchbox/searchbox.component";
 
+import './App.css';
+
 class App extends Component {
   constructor() {
     super();
@@ -24,7 +26,7 @@ class App extends Component {
     });
     return (
       <div className="tc">
-        <h1>Terminator modellek</h1>
+        <h1 className="f1">Terminator modellek</h1>
         <SearchBox searchChange={this.onSearchChange} />
         <TerminatorList models={filteredModels} />
       </div>
